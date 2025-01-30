@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,11 @@
         }
     </style>
 
+
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/6498098347.js" crossorigin="anonymous"></script>
+
+
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -22,10 +27,10 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-                "accent-green": '#179800'
-              }
-            }
-          }
+                'accentgreen': '#179800',
+              },
+            },
+          },
         }
       </script>
     <!-- DaisyUI cdn -->
@@ -36,8 +41,30 @@
 </head>
 <body class="font-sora">
     <header>
+        <!-- NAVIGATION BAR -->
         <nav>
-            
+            <div class="flex justify-around my-8">
+                <div>
+                    <img class="w-[120px]" src="c2-assets/logo-header.png" alt="logo-header">
+                </div>
+                <div>
+                    <ul class="flex gap-10">
+                        <li class="list-none"><a href="">Products</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center space-x-5">
+                    <div class="space-x-3">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="space-x-3">
+                        <button class="btn btn-outline border-[#179800] border-1 border-solid px-10 py-0">Login</button>
+                        <button class="btn bg-[#179800] text-white px-10 py-0">Register</button>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
