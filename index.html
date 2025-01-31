@@ -17,6 +17,20 @@
             background-repeat: no-repeat;
             background-position: bottom right;
         }
+        #dawaat{
+            background-image: url(c2-assets/dawat-mock-up.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 250px;
+            /* background-origin: content-box; */
+        }
+        #india-gate{
+            background-image: url(c2-assets/india-gate-mock-up.png);
+            background-repeat: no-repeat;
+            background-position:  right;
+            background-size: 150px;
+            background-origin: content-box;
+        }
     </style>
 
 
@@ -218,7 +232,7 @@
                                 <p class="font-medium text-sm">$39.99</p>
                             </div>
                         </div>
-                        <div class="flex gap-[16px] bg-white rounded-lg px-[14px] py-[12px]">
+                        <div class="hidden md:flex gap-[16px] bg-white rounded-lg px-[14px] py-[12px]">
                             <div>
                                 <img class="bg-[#e7dbc1] w-[70px] rounded-lg" src="c2-assets/onion.png" alt="">
                             </div>
@@ -233,6 +247,31 @@
                 </div>
             </div>
           </section>
+
+          <!-- ARRIVAL AND OFFERS -->
+           <section class="md:h-[700px] py-[60px] w-[100%] md:w-[80%] mx-auto overflow-hidden">
+            <div class="space-y-[40px] ">
+                <div>
+                    <h3  class="text-[#179800] text-2xl w-[80%] mx-auto md:w-auto">Arrival & Offers</h3>
+                </div>
+                <div class="flex flex-col md:flex-row gap-[32px]" >
+                    <div id="dawaat"  class="bg-[#115414] px-[30px] py-[40px] w-[80%] md:w-[60%] rounded-lg mx-auto">
+                        <div  class="space-y-[20px] items-center">
+                            <img class="w-[35%]" src="c2-assets/dawat-logo.png" alt="">
+                            <button class="btn text-base border-none px-[30px] text-white bg-[#63B76D] font-normal">Cook  Exotic  Dishes</button>
+                            <h2 class="text-[24px] text-white">UP to <span class="font-bold">20% OFF</span></h2>
+                        </div>
+                    </div>
+                    <div id="india-gate"  class="bg-[#102861] px-[30px] py-[40px] w-[80%] md:w-[40%] rounded-lg mx-auto">
+                        <div  class="space-y-[20px] items-center">
+                            <img class="w-[20%]" src="c2-assets/india-gate-logo.png" alt="">
+                            <button class="btn text-base border-none px-[32px] text-white bg-[#2A4D97] font-normal">World’s No.1 Rice</button>
+                            <h2 class="text-[24px] text-white">UP to <span class="font-bold">20% OFF</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </section>
     </main>
     <footer>
 
